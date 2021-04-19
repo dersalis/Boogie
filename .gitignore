@@ -1,2 +1,4 @@
-/Bogie.Api/bin
-/Bogie.Api/obj
+/Boogie.Api/bin
+/Boogie.Api/obj
+/Boogie.Web/node_modules
+/Unify
