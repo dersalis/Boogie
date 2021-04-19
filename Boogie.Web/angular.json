@@ -24,9 +24,33 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/vendor/bootstrap/bootstrap.min.css",
+              "src/assets/vendor/icon-awesome/css/font-awesome.min.css",
+              "src/assets/vendor/icon-line-pro/style.css",
+              "src/assets/vendor/slick-carousel/slick/slick.css",
+              "src/assets/vendor/icon-hs/style.css",
+              "src/assets/vendor/animate.css",
+              "src/assets/vendor/hamburgers/hamburgers.min.css",
+              "src/assets/vendor/hs-megamenu/src/hs.megamenu.css",
+              "src/assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css",
+              "src/assets/vendor/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css",
+              "src/assets/vendor/revolution-slider/revolution/css/settings.css",
+              "src/assets/vendor/revolution-slider/revolution/css/layers.css",
+              "src/assets/vendor/revolution-slider/revolution/css/navigation.css",
+              "src/assets/css/styles.e-commerce.css",
+              "src/assets/css/custom.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendor/jquery/jquery.min.js",
+              "src/assets/vendor/jquery-migrate/jquery-migrate.min.js",
+              "src/assets/vendor/popper.js/popper.min.js",
+              "src/assets/vendor/bootstrap/bootstrap.min.js",
+              "src/assets/vendor/jquery.countdown.min.js",
+              "src/assets/vendor/slick-carousel/slick/slick.js",
+              "src/assets/vendor/hs-megamenu/src/hs.megamenu.js",
+              "src/assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"
+            ]
           },
           "configurations": {
             "production": {
