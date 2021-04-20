@@ -38,8 +38,10 @@
               "src/assets/vendor/revolution-slider/revolution/css/settings.css",
               "src/assets/vendor/revolution-slider/revolution/css/layers.css",
               "src/assets/vendor/revolution-slider/revolution/css/navigation.css",
+              "src/assets/vendor/hs-admin-icons/hs-admin-icons.css",
               "src/assets/css/styles.e-commerce.css",
-              "src/assets/css/custom.css"
+              "src/assets/css/custom.css",
+              "src/assets/css/unify-admin.css"
             ],
             "scripts": [
               "src/assets/vendor/jquery/jquery.min.js",
