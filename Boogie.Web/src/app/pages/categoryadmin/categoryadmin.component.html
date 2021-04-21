@@ -1,1 +1,44 @@
-<p>categoryadmin works!</p>
+<div class="container g-pb-100">
+  <div class="g-mb-20 g-mt-30 row">
+    <div class="col-6 row g-ml-3">
+      <h1 class="g-font-weight-300 g-font-size-24 g-color-black g-mr-10">Kategorie</h1>
+      <h1 class="g-font-weight-300 g-font-size-24 g-color-gray-light-v1">{{ categories.length }}</h1>
+    </div>
+    <div class="col-6 g-pr-0" style="text-align: end;">
+      <a routerLink="/admin/categoryadd"
+        class="g-color-text g-color-black--hover g-color-black--focus g-font-size-16 g-text-underline--none--hover">
+        <i class="align-middle mr-2 hs-admin-plus"></i>
+        <span class="g-font-size-default g-pos-rel g-top-1">Dodaj kategorie</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+    <table class="js-editable-table table table-hover u-table--v3 u-editable-table--v1 g-color-black">
+      <thead>
+        <tr>
+          <th style="text-align: left; padding: 10px 20px;">Nazwa</th>
+          <th style="text-align: center; width: 100px; padding: 10px 20px;">Produkty</th>
+          <th style="width: 75px; padding: 10px 20px;"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let category of categories">
+          <td style="text-align: left;">{{ category.name }}</td>
+          <td style="text-align: center;">{{ category.productsCount }}</td>
+          <td>
+            <a class="js-edit u-link-v5 g-color-gray-light-v6 g-color-secondary--hover" href="#">
+              <i class="hs-admin-pencil"></i>
+            </a>
+            <a class="u-link-v5 g-color-gray-light-v6 g-color-secondary--hover g-text-underline--none--hover g-ml-12"
+              href="#">
+              <i class="hs-admin-trash"></i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

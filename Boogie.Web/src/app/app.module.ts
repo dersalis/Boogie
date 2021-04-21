@@ -20,6 +20,8 @@ import { CategoryadminComponent } from './pages/categoryadmin/categoryadmin.comp
 import { TopbaradminComponent } from './components/topbaradmin/topbaradmin.component';
 import { LayoutshopComponent } from './layouts/layoutshop/layoutshop.component';
 import { FooteradminComponent } from './components/footeradmin/footeradmin.component';
+import { CategoryaddComponent } from './pages/categoryadd/categoryadd.component';
+import { ProductaddComponent } from './pages/productadd/productadd.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { FooteradminComponent } from './components/footeradmin/footeradmin.compo
     CategoryadminComponent,
     TopbaradminComponent,
     LayoutshopComponent,
-    FooteradminComponent
+    FooteradminComponent,
+    CategoryaddComponent,
+    ProductaddComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { ICategoryForTable } from './../../models/icategoryfortable';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryadminComponent implements OnInit {
 
-  constructor() { }
+  public categories: ICategoryForTable[] = [];
+
+  constructor() {
+    this.categories = [
+      {'id': '1', 'name': 'Bielizna', 'productsCount': 450},
+      {'id': '2', 'name': 'Czapki', 'productsCount': 345},
+      {'id': '3', 'name': 'Koszulki', 'productsCount': 240},
+      {'id': '4', 'name': 'Buty', 'productsCount': 20}
+    ];
+  }
 
   ngOnInit(): void {
   }

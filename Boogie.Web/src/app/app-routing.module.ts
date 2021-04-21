@@ -1,3 +1,4 @@
+import { CategoryaddComponent } from './pages/categoryadd/categoryadd.component';
 import { WarehauseadminComponent } from './pages/warehauseadmin/warehauseadmin.component';
 import { CategoryadminComponent } from './pages/categoryadmin/categoryadmin.component';
 import { MaterialComponent } from './pages/material/material.component';
@@ -10,6 +11,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LayoutadminComponent } from './layouts/layoutadmin/layoutadmin.component';
 import { ProductsadminComponent } from './pages/productsadmin/productsadmin.component';
 import { LayoutshopComponent } from './layouts/layoutshop/layoutshop.component';
+import { ProductaddComponent } from './pages/productadd/productadd.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'shop/products', pathMatch: 'full' },
@@ -35,7 +37,9 @@ const routes: Routes = [
       { path: '', redirectTo: 'products', pathMatch: 'full' },
       { path: 'products', component: ProductsadminComponent },
       { path: 'category', component: CategoryadminComponent },
-      { path: 'warehouseadmin', component: WarehauseadminComponent }
+      { path: 'warehouseadmin', component: WarehauseadminComponent },
+      { path: 'productadd', component: ProductaddComponent },
+      { path: 'categoryadd', component: CategoryaddComponent }
     ]
   },
 ];
