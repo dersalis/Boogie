@@ -1,16 +1,35 @@
+<!-- Breadcrumbs -->
+<section class="g-brd-bottom g-brd-gray-light-v4 g-py-30">
+  <div class="container">
+    <div class="d-sm-flex text-center">
+      <div class="align-self-center row">
+        <h1 class="h3 mb-0 ml-3 mr-2">Kategorie</h1>
+        <h1 class="g-font-weight-300 g-font-size-24 g-color-gray-light-v1">{{ categories.length }}</h1>
+      </div>
+
+      <div class="align-self-center ml-auto">
+        <ul class="u-list-inline">
+          <li class="list-inline-item g-mr-5">
+            <a class="u-link-v5 g-color-text" href="#">Administracja</a>
+            <i class="g-color-gray-light-v2 g-ml-5 fa fa-angle-right"></i>
+          </li>
+          <li class="list-inline-item g-color-primary">
+            <span>Produkty</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+
 <div class="container g-pb-100">
-  <div class="g-mb-20 g-mt-30 row">
-    <div class="col-6 row g-ml-3">
-      <h1 class="g-font-weight-300 g-font-size-24 g-color-black g-mr-10">Kategorie</h1>
-      <h1 class="g-font-weight-300 g-font-size-24 g-color-gray-light-v1">{{ categories.length }}</h1>
-    </div>
-    <div class="col-6 g-pr-0" style="text-align: end;">
-      <a routerLink="/admin/categoryadd"
-        class="g-color-text g-color-black--hover g-color-black--focus g-font-size-16 g-text-underline--none--hover">
-        <i class="align-middle mr-2 hs-admin-plus"></i>
-        <span class="g-font-size-default g-pos-rel g-top-1">Dodaj kategorie</span>
-      </a>
-    </div>
+  <div class="g-mb-10 g-mt-30" style="text-align: right;">
+    <a routerLink="/admin/categoryadd"
+      class="g-color-text g-color-black--hover g-color-black--focus g-font-size-16 g-text-underline--none--hover">
+      <i class="align-middle mr-2 hs-admin-plus"></i>
+      <span class="g-font-size-default g-pos-rel g-top-1">Dodaj kategorie</span>
+    </a>
   </div>
 
   <div class="table-responsive">

@@ -1,11 +1,36 @@
-<div class="container g-pb-100">
-  <div class="g-mb-20 g-mt-30 row">
-    <div class="col-6 row g-ml-3">
-      <h1 class="g-font-weight-300 g-font-size-24 g-color-black g-mr-10">Nowy produkt</h1>
-      <!-- <h1 class="g-font-weight-300 g-font-size-24 g-color-gray-light-v1">{{ categories.length }}</h1> -->
+<!-- Breadcrumbs -->
+<section class="g-brd-bottom g-brd-gray-light-v4 g-py-30">
+  <div class="container">
+    <div class="d-sm-flex text-center">
+      <div class="align-self-center row">
+        <h1 class="h3 mb-0 ml-3 mr-2">Nowa kategoria</h1>
+        <h1 class="g-font-weight-300 g-font-size-24 g-color-gray-light-v1">{{ products.length }}</h1>
+      </div>
+
+      <div class="align-self-center ml-auto">
+        <ul class="u-list-inline">
+          <li class="list-inline-item g-mr-5">
+            <a class="u-link-v5 g-color-text" href="#">Administracja</a>
+            <i class="g-color-gray-light-v2 g-ml-5 fa fa-angle-right"></i>
+          </li>
+          <li class="list-inline-item g-mr-5">
+            <a class="u-link-v5 g-color-text" href="#">Produkty</a>
+            <i class="g-color-gray-light-v2 g-ml-5 fa fa-angle-right"></i>
+          </li>
+          <li class="list-inline-item g-color-primary">
+            <span>Nowy produkt</span>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="col-6 g-pr-0" style="text-align: end;">
-      <a routerLink="/admin/products"
+  </div>
+</section>
+<!-- End Breadcrumbs -->
+
+<div class="container g-pb-100">
+
+  <div class="g-mb-10 g-mt-30" style="text-align: right;">
+    <a routerLink="/admin/products"
         class="mr-4 g-color-text g-color-black--hover g-color-black--focus g-font-size-16 g-text-underline--none--hover">
         <i class="align-middle mr-2 hs-admin-close"></i>
         <span class="g-font-size-default g-pos-rel g-top-1">Anuluj</span>
@@ -15,9 +40,64 @@
         <i class="align-middle mr-2 hs-admin-save"></i>
         <span class="g-font-size-default g-pos-rel g-top-1">Zapisz</span>
       </a>
-    </div>
   </div>
 
 
+  <div class="g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-20--md g-mb-30">
+    <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mb-20">Basic Text Inputs</h3>
+
+    <!-- Default Input -->
+    <div class="form-group g-mb-30">
+      <label class="g-mb-10" for="inputGroup-1_1">Default Input</label>
+
+      <div class="g-pos-rel">
+        <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+        <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
+      </span>
+        <input id="inputGroup-1_1" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+      </div>
+    </div>
+    <!-- End Default Input -->
+
+    <!-- With Text Line -->
+    <div class="form-group g-mb-30">
+      <label class="g-mb-10" for="inputGroup-1_2">With Text Line</label>
+
+      <div class="g-pos-rel">
+        <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
+        <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
+       </span>
+        <input id="inputGroup-1_2" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+        <small class="g-font-weight-300 g-font-size-12 g-color-gray-dark-v6 g-pt-5">We use this only for statistics</small>
+      </div>
+    </div>
+    <!-- End With Text Line -->
+
+    <!-- With Icon -->
+    <div class="form-group g-mb-30">
+      <label class="g-mb-10" for="inputGroup-1_3">With Icon</label>
+
+      <div class="g-pos-rel">
+        <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-50 h-100">
+        <i class="hs-admin-search g-absolute-centered g-font-size-16 g-color-gray-light-v6"></i>
+      </span>
+        <input id="inputGroup-1_3" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3--focus g-rounded-4 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+      </div>
+    </div>
+    <!-- End With Icon -->
+
+    <!-- With Button (Colorful BG) -->
+    <div class="form-group">
+      <label class="g-mb-10" for="inputGroup-1_4">With Button (Colorful BG)</label>
+
+      <div class="g-pos-rel">
+        <button class="btn u-input-btn--v1 g-width-40 g-bg-primary g-rounded-right-4" type="submit">
+          <i class="hs-admin-search g-absolute-centered g-font-size-16 g-color-white"></i>
+        </button>
+        <input id="inputGroup-1_4" class="form-control form-control-md g-brd-gray-light-v7 g-brd-gray-light-v3 g-rounded-4 g-px-14 g-py-10" type="text" placeholder="Placeholder">
+      </div>
+    </div>
+    <!-- End With Button (Colorful BG) -->
+  </div>
 
 </div>
